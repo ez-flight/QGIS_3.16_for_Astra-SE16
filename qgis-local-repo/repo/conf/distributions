@@ -1,0 +1,6 @@
+Codename: smolensk-local
+Suite: stable
+Components: main
+Architectures: amd64
+Origin: LocalQGIS
+Description: Local QGIS 3.16 repository (own builds, Astra SE 1.6)

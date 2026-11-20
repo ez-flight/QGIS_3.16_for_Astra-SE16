@@ -1,0 +1,37 @@
+# Локальные артефакты — не для git
+# (см. README.md «Публикация (git)»)
+
+# Дерево сборки QGIS (пересоздаётся configure-qgis.sh; ~1 ГБ)
+qgis-3.16-build/build/
+
+# Распакованные исходники (в git — только тарболлы)
+qgis-3.16-build/src/QGIS-final-3_16_16/
+qgis-3.16-build/src/QScintilla-2.11.6/
+qgis-3.16-build/src/PyQt5_gpl-5.10.1/
+qgis-3.16-build/src/libspatialindex-1.8.5/
+
+# Бинарный cmake Kitware (~120 МБ; есть в tarballs/ тарболл 39,5 МБ)
+qgis-3.16-build/cmake-3.16.9-Linux-x86_64/
+
+# Тарболл QGIS — 141 МБ, превышает лимит GitHub 100 МБ/файл.
+# Берётся по ссылке из раздела 2.4 QGIS-массовое-развертывание.md
+qgis-3.16-build/tarballs/qgis-3.16.16.tar.gz
+
+# Распакованные исходники и промежуточные стадии python-сборок
+metasearch-deb/src/owslib-0.14.0/
+metasearch-deb/src/nbformat-4.2.0/
+metasearch-deb/src/plotly-2.1.0+dfsg/
+metasearch-deb/src/pyproj-1.9.6rel/
+metasearch-deb/src/stage-*/
+
+# Исторические сторонние .deb (не для контура)
+metasearch-deb/superseded/
+
+# Бинарные пакеты — через GitHub Releases, не через git
+*.deb
+
+# Служебные данные reprepro (регенерируются includedeb)
+qgis-local-repo/build/
+qgis-local-repo/repo/db/
+qgis-local-repo/repo/dists/
+qgis-local-repo/repo/pool/
